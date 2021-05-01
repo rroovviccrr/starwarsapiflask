@@ -8,7 +8,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 		actions: {
 			// Use getActions to call a function within a fuction
 			loadPeople: async () => {
-				const url = "https://swapi.dev/api/people/";
+				const url = "https://3000-green-catfish-no612092.ws-us04.gitpod.io/people";
 				const response = await fetch(url);
 				const data = await response.json();
 				setStore({ peoples: data.results });
